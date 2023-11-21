@@ -31,3 +31,77 @@ body {
     margin: 5px 0 20px;
     opacity: 0.8;
 }
+
+.header {
+    background-color: #3e57db;
+    color: whitesmoke;
+    padding: 30px 20px;
+}
+
+.header input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 50px;
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px ridge transparent;
+}
+
+.header input:focus {
+    outline: none;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, .5);
+    border: 1px ridge cornflowerblue;
+}
+
+.user-list {
+    background-color: whitesmoke;
+    list-style-type: none;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.user-list li {
+    display: flex;
+    padding: 20px;
+    transition: .25s all;
+    cursor: pointer;
+}
+
+.user-list li:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, .5);
+    border: .5px ridge silver;
+}
+
+.user-list .user-info {
+    margin-left: 10px;
+}
+
+.user-list .user-info h4 {
+    margin: 0 0 10px;
+}
+
+.user-list .user-info p {
+    font-size: 12px;
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.03);
+}
+
+.user-list li.hide {
+    display: none;
+}
